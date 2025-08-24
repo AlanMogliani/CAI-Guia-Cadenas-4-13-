@@ -7,7 +7,9 @@ class Program
     static void Main()
     {
         //Ejercicio1();
-        Ejercicio2();
+        //Ejercicio2();
+        Ejercicio3();
+        Ejercicio4();
     }
 
     static void Ejercicio1()
@@ -27,8 +29,23 @@ class Program
         phraseHas = phrase.Contains("fin");
         if (phraseHas) { Console.WriteLine("Phrase contains the word 'fin'"); }
         ;
-
-
-
     }
+
+    static void Ejercicio3()
+    {
+        string input;
+        Console.Write("Enter a text in lower caps: ");
+        input = Console.ReadLine();
+        Console.WriteLine("Here's the text in upper caps: " + input.ToUpper());
+    }
+
+    static void Ejercicio4()
+    {
+        string input;
+        Console.Write("Enter a text in upper caps: ");
+        input = Console.ReadLine();
+        Console.WriteLine("Here's the text in upper caps: " + input.ToLower());
+    }
+
+
 }
